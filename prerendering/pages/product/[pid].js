@@ -15,7 +15,7 @@ export default function ProductDetailPage(props){
 }
 
 async function getData(){
-    const filePath = path.join(process.cwd(), "data", "dummy-backend.json");
+  const filePath = path.join(process.cwd(), "data", "dummy-backend.json");
     const fileData = await fs.readFile(filePath);
     const data = JSON.parse(fileData);
     return data;
